@@ -10,7 +10,7 @@ quandl.ApiConfig.api_key = 'HbS8azUsnsRnb_d17E1Z'
 exchanges = ['COINBASE','BITSTAMP','ITBIT','KRAKEN']
 
 exchange_data = {}
-
+print ("Exchange code starts here")
 for exchange in exchanges:
     exchange_code = 'BCHARTS/{}USD'.format(exchange)
     btc_exchange_df = quandl.get(exchange_code)
