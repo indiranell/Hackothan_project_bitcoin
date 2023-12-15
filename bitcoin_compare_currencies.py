@@ -8,7 +8,7 @@ quandl.ApiConfig.api_key = 'HbS8azUsnsRnb_d17E1Z'
 #Read different markets for USD
 df_usd_bitstamp = quandl.get("BCHARTS/BITSTAMPUSD", start_date="2016-09-12", end_date="2017-10-12", returns="pandas")
 df_usd_kraken = quandl.get('BCHARTS/KRAKENUSD',start_date="2016-09-12", end_date="2017-10-12", returns="pandas")
-
+print ("Program starts here")
 #Plot using matplotlib library
 f, (ax1, ax2) = plt.subplots(1, 2)
 plt.suptitle("Bitcoin Open and close Price of different markets in USD")
